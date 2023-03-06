@@ -44,7 +44,7 @@ class Program
                 {
                     case 1:customersMenu();
                         break;
-                    case 2: // todo display accounts menu
+                    case 2: accountMenu();
                         break;
                     case 3: // todo display funds transfer menu
                         break;
@@ -79,7 +79,7 @@ class Program
             System.Console.WriteLine("2.Delete Customer");
             System.Console.WriteLine("3.Update Customer");
             System.Console.WriteLine("4.View Customer");
-            System.Console.WriteLine("5.Account Statement");
+            System.Console.WriteLine("0 Back to main menu");
 
             System.Console.Write("Enter Choice:");
             customerMenuOption = System.Convert.ToInt32(System.Console.ReadLine());
@@ -88,4 +88,24 @@ class Program
         while (customerMenuOption != 0);
 
     }
+
+    static void accountMenu()
+    {
+        int acountsMenuOption = -1;
+        do
+        {
+            System.Console.WriteLine("\n ::Accounts Menu::");
+            System.Console.WriteLine("1.Add Account");
+            System.Console.WriteLine("2.Delete Account");
+            System.Console.WriteLine("3.Update Account");
+            System.Console.WriteLine("4.View Account");
+            System.Console.WriteLine("0.Back to Main Menu");
+
+            System.Console.Write("Enter Choice:");
+            acountsMenuOption = System.Convert.ToInt32(System.Console.ReadLine());
+
+        }
+        while (acountsMenuOption != 0);
+    }
+
 }
